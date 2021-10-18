@@ -27,7 +27,7 @@ async def cancel(event):
 async def start(event):
   await event.reply("**Etiketleme Botu**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilir ★\nDaha fazla bilgi için **/help**'i tıklayın.",
                     buttons=(
-                      [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/UserEtigetBot?startgroup=a'),
+                      [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/Etktytbot?startgroup=a'),
                       Button.url('💬 Group', 'https://t.me/gycyolcu),
                       Button.url('👮‍♂️ Sahibi', 'https://t.me/evetbenim38')]
                     ),
@@ -38,7 +38,7 @@ async def help(event):
   helptext = "**Mention Tagger Bot'un Yardım Menüsü**\n\nKomut: /all \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. \n`Örnek: /all Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyerek ve /cancel yazarak etiketleme işlemi biter. 🤗"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/UserEtigetBot?startgroup=a'),
+                      [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/Etktytbot?startgroup=a'),
                        Button.url('💬 Group', 'https://t.me/gycyolcu'),
                       Button.url('👮‍♂️ Sahibim', 'https://t.me/evetbenim38')]
                     ),
