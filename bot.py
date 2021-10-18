@@ -40,7 +40,7 @@ async def help(event):
                     buttons=(
                       [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/Etktytbot?startgroup=a'),
                        Button.url('💬 Group', 'https://t.me/gycyolcu'),
-                      Button.url('👮‍♂️ Sahibim', 'https://t.me/evetbenim38')]
+                      Button.url('👮‍♂️ Sahibi', 'https://t.me/evetbenim38')]
                     ),
                     link_preview=False
                    )
