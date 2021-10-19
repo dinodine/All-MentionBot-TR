@@ -25,7 +25,7 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**GeceYolcularıTagger Bot**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim Bu tür botlar için Kod Sahibi ile iletişime geçin @SakirBey1 ★\nDaha fazla bilgi için **/help**'i tıklayın.",
+  await event.reply("**GeceYolcularıTagger Bot**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilir. Bu tür botlar için Kod Sahibi ile iletişime geçiniz. 👨‍💻 @evetbenim38 ★\nDaha fazla bilgi için **/help** 📚 Bilgi için tıklayınız.",
                     buttons=(
                       [Button.url('🌟 Beni Grubunuza Ekleyin', 'https://t.me/Etktytbot?startgroup=a'),
                       Button.url('📣 Support', 'https://t.me/geceylcular'),
@@ -36,7 +36,7 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**GeceYolcularıtagger bot'un Yardım Menüsü**\n\nKomut: /all \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. \n`Örnek: /all Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyecek"
+  helptext = "**GeceYolcularıtagger bot'un Yardım Menüsü**\n\nKomut: /all \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. \n`Örnek: /all Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyerek,Sizlere iyi günler dilerim daha fazla bilgi için sahibim 👨‍💻 @evetbenim38 yazıp bilgi alabilirsiniz."
   await event.reply(helptext,
                     buttons=(
                       [Button.url('🌟 Beni Grubunuza Ekleyin', 'https://t.me/loungetaggerbot?startgroup=a'),
