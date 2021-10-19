@@ -25,22 +25,24 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**Etiketleme Botu**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilir ★\nDaha fazla bilgi için **/help**'i tıklayın.",
+  await event.reply("**GeceYolcularıTagger Bot**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim Bu tür botlar için Kod Sahibi ile iletişime geçin @SakirBey1 ★\nDaha fazla bilgi için **/help**'i tıklayın.",
                     buttons=(
-                      [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/Etktytbot?startgroup=a'),
-                      Button.url('💬 Group', 'https://t.me/gycyolcu),
-                      Button.url('👮‍♂️ Sahibi', 'https://t.me/evetbenim38')]
+                      [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/loungetaggerbot?startgroup=a'),
+                      Button.url('📣 Support', 'https://t.me/geceylcular'),
+                      Button.url('💻 Developer', 'https://t.me/SakirBey1'),
+                      Button.url('🚀 Sahibim', 'https://t.me/evetbenim38')]
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Mention Tagger Bot'un Yardım Menüsü**\n\nKomut: /all \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. \n`Örnek: /all Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyerek ve /cancel yazarak etiketleme işlemi biter. 🤗"
+  helptext = "**GeceYolcularıtagger bot'un Yardım Menüsü**\n\nKomut: /all \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. \n`Örnek: /all Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyecek"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/Etktytbot?startgroup=a'),
-                       Button.url('💬 Group', 'https://t.me/gycyolcu'),
-                      Button.url('👮‍♂️ Sahibi', 'https://t.me/evetbenim38')]
+                      [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/loungetaggerbot?startgroup=a'),
+                       Button.url('📣 Support', 'https://t.me/geceylcular'),
+                       Button.url('💻 Developer', 'https://t.me/SakirBey1'),
+                      Button.url('🚀 Sahibim', 'https://t.me/evetbenim38')]
                     ),
                     link_preview=False
                    )
@@ -70,7 +72,7 @@ async def mentionall(event):
     return await event.respond("__Bana bir argüman ver!__")
   else:
     return await event.respond("__Bir mesajı yanıtlayın veya başkalarından bahsetmem için bana bir metin verin!__")
-  
+    
   if mode == "text_on_cmd":
     anlik_calisan.append(event.chat_id)
     usrnum = 0
@@ -79,7 +81,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("Etikeletme İşlemi Bitti 🛑 İyi günler dileriz 🤗")
+        await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
@@ -106,5 +108,5 @@ async def mentionall(event):
         usrtxt = ""
 
 
-print(">> Bot çalıyor merak etme 👮‍♂️ @gycyolcu Grubuna yazarak bilgi alabilirsin <<")
+print(">> Bot çalıyor merak etme 🚀 @geceylcular bilgi alabilirsin <<")
 client.run_until_disconnected()
