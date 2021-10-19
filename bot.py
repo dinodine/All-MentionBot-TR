@@ -25,7 +25,7 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**GeceYolcularıTagger Bot**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilir. Bu tür botlar için Kod Sahibi ile iletişime geçiniz. 👨‍💻 [Armanc Bey](https://t.me/evetbenim38) ★\nDaha fazla bilgi için **/help** yazınız veya tıklayınız.",
+  await event.reply("**GeceYolcularıTagger Bot**\n\nGrup veya kanaldaki neredeyse tüm üyelerden bahsedebilir. Bu tür botlar için Kod Sahibi ile iletişime geçiniz. 👨‍💻 [Armanc Bey](https://t.me/evetbenim38) 📬\nDaha fazla bilgi için **/help** yazınız veya tıklayınız.",
                     buttons=(
                       [Button.url('🌟 Beni Grubunuza Ekleyin', 'https://t.me/Etktytbot?startgroup=a'),
                       Button.url('📣 Support', 'https://t.me/umutyolculuk'),
@@ -36,7 +36,7 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**GeceYolcularıtagger bot'un Yardım Menüsü**\n\nKomut: /all \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. \n`Örnek: /all Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketler. \n\nEtiket işlemini **sonlandırmak** için /cancel yazınız. Sizlere iyi günler. Daha fazla bilgi için sahibim 👨‍💻[Armanc Bey](https://t.me/evetbenim38) Telegram aracılığıyla bilgi alabilirsiniz."
+  helptext = "**GeceYolcularıtagger bot'un Yardım Menüsü**\n\n💡 Komut: /all \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. \n`Örnek: /all Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. Herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketler. \n\n📢 Etiketleme işlemini **sonlandırmak** için >> Komutu /cancel yazınız. Daha fazla bilgi için sahibim 👨‍💻[Armanc Bey](https://t.me/evetbenim38) Telegram aracılığıyla bilgi alabilirsiniz."
   await event.reply(helptext,
                     buttons=(
                       [Button.url('🌟 Beni Grubunuza Ekleyin', 'https://t.me/loungetaggerbot?startgroup=a'),
