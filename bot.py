@@ -25,7 +25,7 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**GeceYolcuları Tagger Bot**f"""\n🗣️ Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilir.\n\n🤖 Bu tür botlar için, Kod Sahibi ile iletişime geçiniz. **Developer** 👨‍💻 [Armanç Bey](https://t.me/evetbenim38) 😉\nDaha fazla bilgi için **/help**'i tıklayınız.""",
+  await event.reply("**GeceYolcuları Tagger Bot** - \n🗣️ Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilir. -\n\n🤖 Bu tür botlar için, Kod Sahibi ile iletişime geçiniz. **Developer** 👨‍💻 [Armanç Bey](https://t.me/evetbenim38) 😉\nDaha fazla bilgi için **/help**'i tıklayınız.",
                     buttons=(
                       [Button.url('🌟 Beni Grubunuza Ekleyin', 'https://t.me/Etktytbot?startgroup=a'),
                       Button.url('📣 Support', 'https://t.me/umutyolculuk'),
