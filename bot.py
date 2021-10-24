@@ -39,7 +39,7 @@ async def help(event):
   helptext = "**GeceYolcularıtagger bot'un Yardım Menüsü**\n\n📚 Komut: /all \nBu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. \n`Örnek: /all Günaydın!` \nBu komutu yanıt olarak kullanabilirsiniz. Herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketler. \n\n📢 Etiketleme işlemini **sonlandırmak** için >> Komutu /cancel yazınız.\n\n🎯 Daha fazla bilgi için sahibim. Developer 👨‍💻 [Armanç Bey](https://t.me/evetbenim38) ile Telegram aracılığıyla kendisinden bilgi alabilirsiniz."
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('🌟 Beni Grubunuza Ekleyin', 'https://t.me/loungetaggerbot?startgroup=a'),
+                      [Button.url('🌟 Beni Grubunuza Ekleyin', 'https://t.me/Etktytbot?startgroup=a'),
                        Button.url('📣 Support', 'https://t.me/umutyolculuk'),
                        Button.url('👨‍💻 Developer', 'https://t.me/evetbenim38'),
                       Button.url('💬 Sohbet', 'https://t.me/gycyolcu')]
